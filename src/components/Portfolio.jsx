@@ -8,24 +8,28 @@ function Portfolio() {
     {
       name: "SIMVICTUS",
       category: "GAME WEB",
+      description: "An immersive gaming platform with advanced multiplayer features and real-time gameplay mechanics.",
       image: "https://image2url.com/r2/default/images/1769165069238-e39688a7-5be7-4753-b124-edd5bbfe0cb6.png",
       link: "https://simvictus.com/",
     },
     {
       name: "SCOUT CAPITALS",
       category: "WEB APP",
+      description: "A comprehensive financial management platform for investment tracking and portfolio analysis.",
       image: "https://image2url.com/r2/default/images/1769165010346-55539a1a-87e5-4719-a7fe-ee941ae9aab7.png",
       link: "https://scoutscapital.com/",
     },
     {
       name: "LIFTSOL",
       category: "GYM WEB",
+      description: "Modern fitness management system with workout tracking, nutrition planning, and progress monitoring.",
       image: "https://image2url.com/r2/default/images/1769164963707-dea98895-5a9e-476e-aa4c-b603e5431493.png",
       link: "https://liftsol.pk/",
     },
     {
       name: "CREYATI",
-      category: "AGGENCY",
+      category: "AGENCY",
+      description: "Creative digital agency platform showcasing innovative design solutions and brand development services.",
       image: "https://image2url.com/r2/default/images/1769165180822-073c9ca6-0b80-4e57-adb7-704e0af1170d.png",
       link: "https://www.creyeti.com.au/work",
     },
@@ -33,6 +37,7 @@ function Portfolio() {
     {
       name: "PAKCODER",
       category: "DEVELOPER WEB",
+      description: "Professional developer community platform with coding resources, tutorials, and project collaboration tools.",
       image: "https://image2url.com/r2/default/images/1769165331242-810642c7-1635-4c95-9045-8141140ad07c.png",
       link: "https://www.pakcoder.com/",
     },
@@ -126,8 +131,11 @@ function Portfolio() {
                   <h3 className="text-xl md:text-2xl font-bold text-white group-hover:text-[#E96600] transition-colors duration-300 mb-2">
                     {project.name}
                   </h3>
-                  <p className="text-gray-400 text-sm group-hover:text-[#E96600]/80 transition-colors duration-300">
+                  <p className="text-gray-400 text-sm group-hover:text-[#E96600]/80 transition-colors duration-300 mb-3">
                     {project.category}
+                  </p>
+                  <p className="text-gray-500 text-xs leading-relaxed line-clamp-3">
+                    {project.description}
                   </p>
                 </div>
               </a>

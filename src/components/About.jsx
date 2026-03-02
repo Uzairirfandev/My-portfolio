@@ -1,7 +1,45 @@
 // src/components/About.js
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 function About() {
+  const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
+  const [displayText, setDisplayText] = useState('');
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  const roles = [
+    "Front-End Developer",
+    "UI/UX Designer", 
+    "Web Developer",
+    "Design Focused Developer"
+  ];
+
+  useEffect(() => {
+    const currentRole = roles[currentRoleIndex];
+    
+    const timeout = setTimeout(() => {
+      if (!isDeleting) {
+        // Typing
+        if (displayText.length < currentRole.length) {
+          setDisplayText(currentRole.slice(0, displayText.length + 1));
+        } else {
+          // Finished typing, wait then delete
+          setTimeout(() => setIsDeleting(true), 2000);
+        }
+      } else {
+        // Deleting
+        if (displayText.length > 0) {
+          setDisplayText(displayText.slice(0, -1));
+        } else {
+          // Finished deleting, move to next role
+          setIsDeleting(false);
+          setCurrentRoleIndex((prev) => (prev + 1) % roles.length);
+        }
+      }
+    }, isDeleting ? 50 : 100);
+
+    return () => clearTimeout(timeout);
+  }, [displayText, isDeleting, currentRoleIndex, roles]);
+
   return (
     <section 
       id="about" 
@@ -15,7 +53,8 @@ function About() {
             About Me
           </h2>
           <p className="mt-3 sm:mt-4 text-base sm:text-lg md:text-xl text-gray-300 max-w-4xl mx-auto">
-            Front-End Developer (Design Focused)
+            <span className="text-[#E96600]">{displayText}</span>
+            <span className="animate-pulse">|</span>
           </p>
         </div>
 
