@@ -1,20 +1,20 @@
 // src/components/About.js
 import React, { useState, useEffect } from 'react';
 
+const ROLES = [
+  "Front-End Developer",
+  "UI/UX Designer", 
+  "Web Developer",
+  "Design Focused Developer"
+];
+
 function About() {
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
   const [displayText, setDisplayText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
 
-  const roles = [
-    "Front-End Developer",
-    "UI/UX Designer", 
-    "Web Developer",
-    "Design Focused Developer"
-  ];
-
   useEffect(() => {
-    const currentRole = roles[currentRoleIndex];
+    const currentRole = ROLES[currentRoleIndex];
     
     const timeout = setTimeout(() => {
       if (!isDeleting) {
@@ -32,13 +32,13 @@ function About() {
         } else {
           // Finished deleting, move to next role
           setIsDeleting(false);
-          setCurrentRoleIndex((prev) => (prev + 1) % roles.length);
+          setCurrentRoleIndex((prev) => (prev + 1) % ROLES.length);
         }
       }
     }, isDeleting ? 50 : 100);
 
     return () => clearTimeout(timeout);
-  }, [displayText, isDeleting, currentRoleIndex, roles]);
+  }, [displayText, isDeleting, currentRoleIndex, ROLES]);
 
   return (
     <section 
