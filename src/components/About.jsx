@@ -38,7 +38,7 @@ function About() {
     }, isDeleting ? 50 : 100);
 
     return () => clearTimeout(timeout);
-  }, [displayText, isDeleting, currentRoleIndex, ROLES]);
+  }, [displayText, isDeleting, currentRoleIndex]);
 
   return (
     <section 
