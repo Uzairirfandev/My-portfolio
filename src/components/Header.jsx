@@ -11,7 +11,7 @@ function Header() {
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
           <div className="flex items-center justify-between h-20 md:h-24">
             {/* Logo Image - Animated */}
-            <a href="#" className="flex items-center group">
+            <button className="flex items-center group" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
               <img
                 src={logoImage}
                 alt="Muhammad Uzair Logo"
@@ -20,7 +20,7 @@ function Header() {
                        hover:scale-110 hover:rotate-3 hover:brightness-125
                        animate-float"
               />
-            </a>
+            </button>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8 lg:space-x-10">
@@ -73,7 +73,7 @@ function Header() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-[#121212] border-b border-gray-800/50">
+        <div className="md:hidden fixed top-20 md:top-24 left-0 right-0 bg-[#121212] border-b border-gray-800/50 z-40">
           <div className="px-5 py-8 space-y-6">
             <a
               href="#home"

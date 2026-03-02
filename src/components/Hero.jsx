@@ -31,7 +31,7 @@ function Hero() {
           {/* Left side - Text + Buttons + Stats */}
           <div className="text-center lg:text-left space-y-8 lg:space-y-12 order-2 lg:order-1">
             <div>
-              <p className="text-xl md:text-2xl text-gray-300 font-medium">Hi i AM</p>
+              
               
               {/* Muhammad Uzair with smoke/neon glow */}
               <h1 
