@@ -19,13 +19,7 @@ function Portfolio() {
       image: "https://image2url.com/r2/default/images/1769165010346-55539a1a-87e5-4719-a7fe-ee941ae9aab7.png",
       link: "https://scoutscapital.com/",
     },
-    {
-      name: "LIFTSOL",
-      category: "GYM WEB",
-      description: "Modern fitness management system with workout tracking, nutrition planning, and progress monitoring.",
-      image: "https://image2url.com/r2/default/images/1769164963707-dea98895-5a9e-476e-aa4c-b603e5431493.png",
-      link: "https://liftsol.pk/",
-    },
+    
     {
       name: "CREYATI",
       category: "AGENCY",
