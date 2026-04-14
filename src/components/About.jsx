@@ -1,5 +1,6 @@
 // src/components/About.js
 import React, { useState, useEffect } from 'react';
+import profileImage from '../assets/1.png.jpeg';
 
 const ROLES = [
   "Front-End Developer",
@@ -52,6 +53,7 @@ function About() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white">
             About Me
           </h2>
+          <div className="mt-4 w-24 h-1 bg-gradient-to-r from-[#E96600] to-[#ff8c3a] mx-auto rounded-full"></div>
           <p className="mt-3 sm:mt-4 text-base sm:text-lg md:text-xl text-gray-300 max-w-4xl mx-auto">
             <span className="text-[#E96600]">{displayText}</span>
             <span className="animate-pulse">|</span>
@@ -94,7 +96,7 @@ function About() {
               }}
             >
               <img
-                src="https://image2url.com/r2/default/images/1769164737855-24628cf0-b84a-415f-a805-86a9ae8478a7.jpeg"
+                src={profileImage}
                 alt="Muhammad Uzair"
                 className="w-full h-full object-cover object-center grayscale hover:grayscale-0 transition-all duration-700"
               />

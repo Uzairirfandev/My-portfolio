@@ -64,6 +64,7 @@ const Skills = () => {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
             Technical <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#E96600] to-[#ff8c3a]">Skills</span>
           </h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#E96600] to-[#ff8c3a] mx-auto rounded-full"></div>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
             Technologies and tools I work with to create amazing digital experiences
           </p>

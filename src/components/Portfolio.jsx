@@ -2,6 +2,10 @@
 import React, { useEffect, useRef } from 'react';
 import Slider from 'react-slick';
 import VanillaTilt from 'vanilla-tilt';
+import simvicImage from '../assets/simvic.png';
+import scoutsImage from '../assets/scouts.png';
+import creyatiImage from '../assets/creyati.png';
+import pakcoderImage from '../assets/pakcoder.png';
 
 function Portfolio() {
   const projects = [
@@ -9,14 +13,14 @@ function Portfolio() {
       name: "SIMVICTUS",
       category: "GAME WEB",
       description: "An immersive gaming platform with advanced multiplayer features and real-time gameplay mechanics.",
-      image: "https://image2url.com/r2/default/images/1769165069238-e39688a7-5be7-4753-b124-edd5bbfe0cb6.png",
+      image: simvicImage,
       link: "https://simvictus.com/",
     },
     {
       name: "SCOUT CAPITALS",
       category: "WEB APP",
       description: "A comprehensive financial management platform for investment tracking and portfolio analysis.",
-      image: "https://image2url.com/r2/default/images/1769165010346-55539a1a-87e5-4719-a7fe-ee941ae9aab7.png",
+      image: scoutsImage,
       link: "https://scoutscapital.com/",
     },
     
@@ -24,7 +28,7 @@ function Portfolio() {
       name: "CREYATI",
       category: "AGENCY",
       description: "Creative digital agency platform showcasing innovative design solutions and brand development services.",
-      image: "https://image2url.com/r2/default/images/1769165180822-073c9ca6-0b80-4e57-adb7-704e0af1170d.png",
+      image: creyatiImage,
       link: "https://www.creyeti.com.au/work",
     },
     
@@ -32,7 +36,7 @@ function Portfolio() {
       name: "PAKCODER",
       category: "DEVELOPER WEB",
       description: "Professional developer community platform with coding resources, tutorials, and project collaboration tools.",
-      image: "https://image2url.com/r2/default/images/1769165331242-810642c7-1635-4c95-9045-8141140ad07c.png",
+      image: pakcoderImage,
       link: "https://www.pakcoder.com/",
     },
   ];
@@ -94,6 +98,7 @@ function Portfolio() {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white">
             PROJECTS
           </h2>
+          <div className="mt-4 w-24 h-1 bg-gradient-to-r from-[#E96600] to-[#ff8c3a] mx-auto rounded-full"></div>
         </div>
 
         <Slider {...settings}>

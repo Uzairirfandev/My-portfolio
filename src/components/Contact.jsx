@@ -38,6 +38,7 @@ const Contact = () => {
         <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-center mb-6 md:mb-10 text-white">
           Contact Me
         </h2>
+        <div className="w-24 h-1 bg-gradient-to-r from-[#E96600] to-[#ff8c3a] mx-auto rounded-full mb-6 md:mb-10"></div>
 
         <p className="text-center text-gray-300 text-lg md:text-xl mb-10 md:mb-14 max-w-3xl mx-auto">
           Cultivating Connections: Reach Out And Connect With Me

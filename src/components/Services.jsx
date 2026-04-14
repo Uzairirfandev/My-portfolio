@@ -22,6 +22,7 @@ function Services() {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white">
             SKILLS
           </h2>
+          <div className="mt-4 w-24 h-1 bg-gradient-to-r from-[#E96600] to-[#ff8c3a] mx-auto rounded-full"></div>
           <p className="mt-4 text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
             My core technical skills and tools I work with daily
           </p>
